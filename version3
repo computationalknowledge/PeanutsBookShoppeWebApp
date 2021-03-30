@@ -1,0 +1,26 @@
+error msg: cannot access the database
+
+var sqlite3 = require('sqlite3');
+var express = require('express');
+var app = express();
+var file = "Bookshop.db";
+var db = new sqlite3.Database(file);
+
+var server = app.listen(8084, function () {
+   var host = server.address().address
+   var port = server.address().port   
+   console.log("Example app listening at http://%s:%s", host, port)
+})
+
+app.get('/home', function (req, res) {
+   res.send("Welcome to Peanut's Bookshoppe");
+   
+db.all("SELECT bookid, author, subject, price, qtyinstock FROM books", function(err, rows) {
+    rows.forEach(function(row) {
+        res.send(row.bookid, row.author, row.subject, row.price, row.qtyinstock);
+    })
+});
+
+})
+
+db.close();
