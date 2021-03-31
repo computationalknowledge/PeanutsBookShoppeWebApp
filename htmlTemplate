@@ -1,0 +1,43 @@
+<html>
+<head> </head>
+
+<body>
+
+<H1>Welcome to Peanut's Flower Shoppe</H1>
+
+<table border width = 700px >
+    
+<tr>Flower Selections
+<td padding=25 width=200>Roses</td>
+<td padding=25 width=200>Violets</td>
+</tr>
+
+<tr>
+<td padding=25 width=200><img src = "roses.jpg" width = 200></td>
+<td padding=25 width=200><img src = "violets.jpg" width = 200></td>
+</tr>
+
+<tr>
+<td padding=25 width=200>Price: Per Dozen: $58</td>
+<td padding=25 width=200>Price: Per Dozen: $38</td>
+</tr>
+</table>    
+
+<section>
+<div>
+    <h1>Call Now to place your Order: 1-888-888-8888</h1>
+</div>
+
+<article>
+    <h1>Email to place your Order: flowers@flowershoppe.com</h1>
+
+    <aside><a href = "https://www.pickupflowers.com/flower-guide/tips-for-choosing-right-anniversary-flowers" target=new>How to choose the right flowers for the right occasion</a></aside>
+
+</article>
+
+    
+</section>
+
+</body>
+
+</html>
